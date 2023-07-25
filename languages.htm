@@ -1,6 +1,11 @@
 <!DOCTYPE html> <!-- defines the document-->
 <html> <!-- root element -->
 <head>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Languages</title>
     <link rel="icon" type="image/x-icon" href="Pictures/cinnamoroll_content.ico">
@@ -15,13 +20,13 @@
 <p style="text-align:center; color:lightpink;">Welcome everyone!</p>
 
 <div style="text-align: center;">
-    <button onclick="document.location='interests.htm'">Interests</button>
-    <button onclick="document.location='languages.htm'">Languages</button>
-    <button onclick="document.location='projects.htm'">Projects</button>
+    <button onclick="document.location='interests.htm#interests_scroll'">Interests</button>
+    <button onclick="document.location='languages.htm#languages_scroll'">Languages</button>
+    <button onclick="document.location='projects.htm#projects_scroll'">Projects</button>
 </div>
 
 <hr></hr>
-<img id="languages" src = "Pictures/cinnamoroll_stars.png" alt = "picture can not be displayed" style="width: 100px; height:100px;">
+<img id="languages_scroll" src = "Pictures/cinnamoroll_stars.png" alt = "picture can not be displayed" style="width: 100px; height:100px;">
 <h3 style="font-size:20px;">Languages I know</h3>
 <ul>
 <li>C++</li>
@@ -33,7 +38,7 @@
 </ul>
 
 
-<button onclick="document.location='index.htm'">Home</button>
+<button style="text-align: center;" onclick="document.location='index.htm#home_scroll'">Home</button>
 
 
 </body>
